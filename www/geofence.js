@@ -227,7 +227,7 @@ function isInt(n){
 }
 
 // Called after "deviceready" event
-channel.deviceready.subscribe(function () {
+channel.onDeviceReady.subscribe(function () {
     // Device is ready now, the listeners are registered
     // and all queued events can be executed.
     exec(null, null, "GeofencePlugin", "deviceReady", []);
